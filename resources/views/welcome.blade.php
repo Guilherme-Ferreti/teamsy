@@ -28,6 +28,9 @@
             @endif
         </div>
 
+        {{ App\Models\User::count() }} <br />
+        {{ App\Models\User::where('tenant_id', 1)->count() }}
+
         <div class="flex items-center justify-center">
             <div class="flex flex-col justify-around">
                 <div class="space-y-6">
