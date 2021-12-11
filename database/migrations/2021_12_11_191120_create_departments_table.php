@@ -17,7 +17,7 @@ class CreateDepartmentsTable extends Migration
             $table->id();
             $table->string('name');
             $table->timestamps();
-            $table->foreignId('tenant_id')->constrained();
+            $table->foreignId('tenant_id')->index()->constrained();
         });
     }
 
